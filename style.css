@@ -17,10 +17,9 @@ html,body{
 #scroll{
 	width: 100%;
 }
-.pull-down{
+.pull-down,.pull-up{
 	position: absolute;
 	width: 100%;
-	top: -40px;
 	height: 40px;
 	background-color: #fff;
 	color: #F08080; 
@@ -30,17 +29,16 @@ html,body{
 	text-align: center;
 	z-index: 1;
 }
+.pull-down{
+	top: -40px;
+}
 .pull-up{
-	position: absolute;
-	width: 100%;
 	bottom: -40px;
-	height: 40px;
-	background-color: #fff;
-	color: #F08080; 
-	line-height: 40px;
-	font-size: 16px;
-	text-align: center;
-	z-index: 1;
+}
+.pull-down.show, .pull-up.show{
+	position: relative;
+	top: 0;
+	bottom: 0;
 }
 #content {
 	position: relative;
