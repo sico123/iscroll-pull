@@ -1,51 +1,14 @@
 html,body{
     background-color: grey;
     padding: 0;
-	margin: 0;
-	height: 100%;
-	width: 100%;
+    margin: 0;
 }
-.wrapper{
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	z-index: 1;
-	overflow: hidden;
-}
-#scroll{
-	width: 100%;
-}
-.pull-down,.pull-up{
-	position: absolute;
-	width: 100%;
-	height: 40px;
-	background-color: #fff;
-	color: #F08080; 
-	line-height: 40px;
-	font-size: 16px;
-	border-bottom: 1px solid #ccc;
-	text-align: center;
-	z-index: 1;
-}
-.pull-down{
-	top: -40px;
-}
-.pull-up{
-	bottom: -40px;
-}
-.pull-down.show, .pull-up.show{
+#wrapper {
 	position: relative;
-	top: 0;
-	bottom: 0;
-}
-#content {
-	position: relative;
-	top: 0;
-	left: 0;
 	width: 100%;
+    height: 500px;
 	overflow: hidden;
+
 	/* Prevent native touch events on Windows */
 	-ms-touch-action: none;
 
